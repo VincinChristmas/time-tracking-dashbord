@@ -135,10 +135,68 @@ body {
 }
 
 .time-tracking-card__toprow--work {
-    background: var(--Orange300-work);
-    width: 255px;
     overflow: hidden;
 }
+
+/*time-tracking grid image sizes*/
+
+.time-tracking-card__toprow--work--icon--container {
+    background: var(--Orange300-work);
+    width: 255px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.time-tracking-card__toprow--work--icon--container--icon {
+    display: block;
+    margin-left: 159.58px;
+    margin-top: -10.91;
+    width: 78px;
+    height: 78px;
+}
+
+.time-tracking-card__toprow--work--data {
+    background: var(--Navy-900);
+    border-radius: 15px;
+    padding: 32px;
+    position: relative;
+    margin-top: -106px;
+}
+
+.time-tracking-card__toprow--work--data--title--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.time-tracking-card__toprow--work--data--title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+} 
+
+.time-tracking-card__toprow--work--data--title--ellipsis {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Navy-200);
+    line-height: 1;
+}
+
+.time-tracking-card__toprow--work--data--hours {
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.time-tracking-card__toprow--work--data--title--previoushours {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Navy-200);
+}
+
+
 
 .time-tracking-card__toprow--play {
     background: var(--Blue300-play);
@@ -170,14 +228,7 @@ body {
     overflow: hidden;
 }
 
-/*time-tracking grid image sizes*/
-.time-tracking-card__toprow--work img {
-    display: block;
-    margin-left: 159.58px;
-    margin-top: -10.91;
-    width: 78px;
-    height: 78px;
-}
+
 
 .time-tracking-card__toprow--play img {
     display: block;
@@ -220,15 +271,6 @@ body {
     margin-top: -18.79px;
     width: 72px;
     height: 66px;
-}
-
-.time-tracking-card__toprow--work--data {
-    background: var(--Navy-900);
-    border-radius: 15px;
-    height: 140px;
-    margin-top: -40px;
-    padding: 32px;
-    position: relative;
 }
 
 
