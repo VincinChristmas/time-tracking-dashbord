@@ -222,7 +222,7 @@ body {
     border-radius: 15px;
     padding: 32px;
     position: relative;
-    margin-top: -40px;
+    margin-top: -117px;
     z-index: 1;
 }
 
@@ -273,7 +273,7 @@ body {
 .time-tracking-card__bottomrow--selfcare--data--hours {
     font-size: 56px;
     font-weight: 300;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 /* Previous Hours */
@@ -286,4 +286,69 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: var(--Navy-200);
+}
+
+/* Start of The Media Queries */
+
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1116px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        max-width: 90%;
+    }
+    
+    .left-side {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .time-tracking-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .time-tracking-card__toprow--work,
+    .time-tracking-card__toprow--play,
+    .time-tracking-card__toprow--study,
+    .time-tracking-card__bottomrow--exercise,
+    .time-tracking-card__bottomrow--social,
+    .time-tracking-card__bottomrow--selfcare {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile (375px - 767px) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .time-tracking-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .report-for {
+        display: flex;
+        align-items: center;
+        padding: 32px;
+    }
+    
+    .report-for img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    
+    .report-timeframes {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .time-tracking-card__toprow--work--data--hours {
+        font-size: 42px;
+    }
 }
